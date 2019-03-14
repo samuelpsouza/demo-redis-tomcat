@@ -32,7 +32,7 @@
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     -->
     
-    <Manager className="org.redisson.tomcat.RedissonSessionManager"
-          configPath="${catalina.base}/redisson.conf" readMode="REDIS" updateMode="DEFAULT"/>
+   <Manager className="org.redisson.tomcat.RedissonSessionManager"
+          configPath="${catalina.base}/redisson.conf" readMode="MEMORY" updateMode="DEFAULT"/>
 
 </Context>

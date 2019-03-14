@@ -13,7 +13,7 @@
 	</header>
 	<main>
 	<div>
-		<form method="post" action= ${pageContext.request.contextPath}/demo>
+		<form method="post" action=${pageContext.request.contextPath}/demo>
 			Frase: <input type="text" name="phrase" /> <input type="submit"
 				value="Salvar" />
 		</form>
@@ -26,8 +26,12 @@
 		</c:forEach>
 	</div>
 	</main>
-	<footer>
-	<h3>Seu IP: ${ip}</h3>
+	<footer> 
+	<%java.net.InetAddress addr = java.net.InetAddress.getLocalHost();%>
+	<h3>Seu IP: <%=addr %></h3>
+	
+	<h2>Session ID: <%=session.getId() %>
+	</h2>
 	</footer>
 </body>
 </html>
