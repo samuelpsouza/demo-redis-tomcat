@@ -7,7 +7,7 @@
 	<display-name>DemoRedis</display-name>
 	<servlet>
 		<servlet-name>DemoRedis</servlet-name>
-		<servlet-class>dev.DemoRedis</servlet-class>
+		<servlet-class>com.ssouza.DemoRedis</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DemoRedis</servlet-name>
